@@ -1,0 +1,16 @@
+{
+  "name": "supos-app-backup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dayjs": "^1.11.1",
+    "got": "^12.0.4",
+    "node-schedule": "^2.1.0",
+    "rollup": "^2.72.0"
+  },
+  "scripts": {
+    "start": "node --experimental-modules index.mjs",
+    "build": "rollup -c"
+  }
+}
