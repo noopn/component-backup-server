@@ -4,8 +4,8 @@ RUN mkdir -p /supos
 
 COPY . /supos
 
-# WORKDIR /supos-app-backup
+WORKDIR /supos
 
-# RUN npm install
+RUN npm install
 
 # CMD ["npm","start"]
