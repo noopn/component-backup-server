@@ -3,4 +3,4 @@ services:
   supos-backup-app:
     build: .
     volumes:
-      - ./data:/supos-app-backup
+      - ./v:/supos-app-backup/v

@@ -8,4 +8,4 @@ WORKDIR /supos
 
 RUN npm install
 
-# CMD ["npm","start"]
+CMD ["npm","start"]
