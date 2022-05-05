@@ -1,11 +1,11 @@
 FROM node:16
 
-RUN mkdir -p /supos-app-backup
+RUN mkdir -p /supos
 
-COPY ./* /supos-app-backup/
+COPY . /supos
 
-WORKDIR /supos-app-backup
+# WORKDIR /supos-app-backup
 
-RUN npm install
+# RUN npm install
 
-CMD ["npm","start"]
+# CMD ["npm","start"]
