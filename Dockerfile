@@ -8,4 +8,4 @@ WORKDIR /supos-app-backup
 
 RUN npm install
 
-CMD ["yarn","start"]
+CMD ["npm","start"]
