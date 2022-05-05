@@ -2,8 +2,8 @@ FROM node:16
 
 RUN mkdir -p /supos
 
-COPY . /supos
-
+COPY ./index.mjs /supos
+COPY ./package.json /supos
 WORKDIR /supos
 
 RUN npm install
