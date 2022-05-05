@@ -19,9 +19,8 @@ const fn = async () => {
     fs.createWriteStream(`./-v/${name}`)
   );
 };
-fn();
-// try {
-//   schedule.scheduleJob("0 * * * * *", fn);
-// } catch (err) {
-//   promisify(fs.writeFile)("./err.log", "utf-8");
-// }
+try {
+  schedule.scheduleJob("0 * * * * *", fn);
+} catch (err) {
+  promisify(fs.appendFile)("./err.log", "\n" + err.toString());
+}
