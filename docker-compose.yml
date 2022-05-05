@@ -2,6 +2,6 @@ version: "3"
 services:
   supos-backup-app:
     build: .
-  volumes:
-    - ./data/err.log:/supos-app-backup/err.log
-    - ./data/-v:/supos-app-backup/-v
+    volumes:
+      - ./data/err.log:/supos-app-backup/err.log
+      - ./data/-v:/supos-app-backup/-v
